@@ -47,4 +47,4 @@ jobs:
         WZXY_PROVINCE: ${{secrets.PROVINCE}}
         WZXY_TOWNSHIP: ${{secrets.TOWNSHIP}}
         WZXY_STREET: ${{secrets.STREET}}
-      run:  echo "Hello $username $password $city, today is Monday!"
+      run:  echo "Hello $WZXY_USERNAME $WZXY_PASSWORD $WZXY_CITY, today is Monday!"
