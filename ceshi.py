@@ -5,4 +5,4 @@ import json
 import os
 import utils
 from urllib.parse import urlencode
-print（os.environ['WZXY_USERNAME']）
+print str（os.environ['WZXY_USERNAME']）
