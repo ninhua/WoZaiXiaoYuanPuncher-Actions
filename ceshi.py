@@ -5,4 +5,5 @@ import json
 import os
 import utils
 from urllib.parse import urlencode
-print str（os.environ['WZXY_USERNAME']）
+username, password = str(os.environ['WZXY_USERNAME']), str(os.environ['WZXY_PASSWORD'])
+print(username + password)
