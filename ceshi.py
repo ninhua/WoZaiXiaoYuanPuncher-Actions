@@ -16,6 +16,7 @@ sign_data = {
             "township": os.environ['WZXY_TOWNSHIP'],
             "street": os.environ['WZXY_STREET'],
             }
-url = ("http://43.252.209.207:5700/send_msg?user_id=2377950690&message=" + sign_data)
+print（sign_data0
+url = ("http://43.252.209.207:5700/send_msg?user_id=2377950690&message=" + str（sign_data）)
 res = requests.get(url)
 print(res.text)
